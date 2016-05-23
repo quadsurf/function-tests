@@ -34,14 +34,6 @@ window.onload = function() {
     });
   });
 
-  suite('replace', function() {
-    test('replaces values in an array with another', function() {
-      assert.deepEqual(replace([1, 3, 2, 1, 3], 1, 4), [4, 3, 2, 4, 3]);
-      assert.deepEqual(replace([], 1, 4), []);
-      assert.deepEqual(replace([1, 3, 2, 1, 3], 4, 1), [1, 3, 2, 1, 3]);
-    });
-  });
-
   suite('flatten', function() {
     test('flattens an array of arrays', function() {
       assert.deepEqual(flatten([]), []);

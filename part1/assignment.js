@@ -43,23 +43,6 @@ function filterPassingGrades(arr) {
   });
 }
 
-// Define a function named replace that takes in three arguments.
-//    arr (array of numbers)
-//    from (number)
-//    to (number)
-//
-// Return a new array of numbers where all from elements are replaced with to.
-// For example, given [1, 3, 2, 1, 3], 1, and 4, then return [4, 3, 2, 4, 3].
-function replace(arr, from, to) {
-  return arr.reduce(function (memo, item) {
-    if (item === from) {
-      return memo.concat([to]);
-    } else {
-      return memo.concat(item);
-    }
-  }, [])
-}
-
 // Define a function named flatten that takes in one argument.
 //     arr (array of arrays)
 //
@@ -151,3 +134,13 @@ function pluck(arr, key) {
     return obj[key];
   });
 }
+
+
+// Modify the code below to now allow access to secret in the global scope
+// without modifying the code inside the checkSecret function.
+var secret = 'foo'
+var checkSecret = function (val) {
+  return val === secret;
+}
+
+// Fix 

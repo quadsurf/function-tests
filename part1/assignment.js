@@ -86,17 +86,19 @@ function pluck(arr, key) {
 // Define a function onlyEvens which takes in one argument:
 //    arr (array of numbers)
 //
-// It returns an array only containing the original numbers that are even. For
-// example, given the input, [1, 2, 3, 4, 5], the function would produce [2, 4]
+// It returns an array only containing the numbers that are even. For example,
+// given the input, [1, 2, 3, 4, 5], the function would produce [2, 4].
 function onlyEvens(arr) {
   return arr.filter(function(num) {
     return num % 2 === 0;
   });
 }
 
+// ----------------------------------------------------------------------------
 // For the questions below, you will be assuming the results are of the form
 // coming from the Yelp API. See the file in this directory called
 // yelp_search_results.json for an example API response.
+// ----------------------------------------------------------------------------
 
 // Define a function named businessNamesAndRatings, which takes in one argument
 //    result (Yelp API search result)
@@ -135,7 +137,7 @@ function averageRating(result) {
 
 // Define a function named aroundMe, which takes in two arguments:
 //    result     (Yelp API search result)
-//    coordinate (object of the following format: {lat: NUMBER lon: NUMBER})
+//    coordinate (object of the following format: {lat: NUMBER, lon: NUMBER})
 //
 // The function will return an array of businesses who is within 1 mile of your
 // coordinate.
@@ -195,8 +197,8 @@ function aroundMe(result, coordinate) {
 //   </tbody>
 // </table>
 //
-// NOTE: You may use jQuery if you like. The return type is a native DOM
-// element though.
+// NOTE: You may use jQuery if you like, but the return type is still a native
+// DOM element.
 function businessRatingTable(result) {
   $table = $('<table>');
   $thead = $('<thead><tr><th>Name</th><th>Rating</th></tr></thead>');

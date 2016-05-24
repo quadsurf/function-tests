@@ -32,8 +32,8 @@
 //   * Sets do not contain duplicates.
 //   * Sets do not need to have a order.
 //
-// Often sets are represented as a comma separated list between curly braces
-// ({}). Here are some example sets:
+// Often sets are represented in math as a comma separated list between curly
+// braces ({}). Here are some example sets:
 //
 //    {1, 3, 2}
 //    {'John', 'Paul', 'George', 'Ringo'}

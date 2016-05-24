@@ -1,26 +1,3 @@
-// When we first started talking about data types, we mentioned many primitive
-// types (like strings, numbers, booleans, null, etc) and reference types
-// (objects and arrays). Functions seem like this magical third type that we
-// think of as a programming construct (like loops and if statements). In
-// reality, functions is actually another example of a reference type.
-// Think about. We can assign functions to variables using a functional
-// expressions.
-//
-// var myFunction = function () {
-//   // Do some stuff
-// };
-//
-// We also see us passing a function to other functions (namely as a callback.
-//
-// button.addEventListener('click', function (event) {
-//   // Do some stuff
-// });
-//
-// In these cases, functions behave *exactly* like any of the other types.
-// What makes it different is our ability to _invoke_ a function, which allows
-// it to execute code. I'll repeat functions are just like any other data type,
-// but we are able to _invoke_ them.
-//
 // So now that we can see functions be treated like any other data type, we can
 // think of new ways to represent data. This bonus will allow you to think of
 // a situation where a function helps describe data in a way that no other data

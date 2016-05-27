@@ -165,7 +165,7 @@ function aroundMe(result, coordinate) {
     return earthDistance(coordinate, {
       lat: business.location.coordinate.latitude,
       lon: business.location.coordinate.longitude
-    }) < 1;
+    }) <= 1;
   });
 }
 
@@ -200,11 +200,11 @@ function aroundMe(result, coordinate) {
 // NOTE: You may use jQuery if you like, but the return type is still a native
 // DOM element.
 function businessRatingTable(result) {
-  $table = $('<table>');
-  $thead = $('<thead><tr><th>Name</th><th>Rating</th></tr></thead>');
+  var $table = $('<table>');
+  var $thead = $('<thead><tr><th>Name</th><th>Rating</th></tr></thead>');
   $table.append($thead);
 
-  $tbody = $('<tbody>');
+  var $tbody = $('<tbody>');
   var trs = result.businesses.map(function (business) {
     var $tr = $('<tr>');
     var $tdName = $('<td>').text(business.name);
